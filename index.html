@@ -1,0 +1,73 @@
+ 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rasa Nusantara</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Rasa Nusantara</h1>
+    <p>Jelajahi kelezatan kuliner tradisional Indonesia</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="#beranda">Beranda</a>
+    <a href="#resep">Daftar Resep</a>
+    <a href="#tentang">Tentang</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="beranda">
+      <h2>Resep Lezat dari Seluruh Nusantara</h2>
+      <p>Temukan bahan dan cara membuat makanan khas Indonesia.</p>
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Cari resep, misalnya pempek..."
+      >
+<div class="kategori-daerah">
+  <h3>Jelajahi Berdasarkan Daerah</h3>
+  <div class="tombol-kategori">
+    <button type="button" class="filter-daerah aktif" data-daerah="Semua">Semua</button>
+    <button type="button" class="filter-daerah" data-daerah="Sumatera">Sumatera</button>
+    <button type="button" class="filter-daerah" data-daerah="Jawa">Jawa</button>
+    <button type="button" class="filter-daerah" data-daerah="Bali dan Nusa Tenggara">Bali &amp; Nusa Tenggara</button>
+    <button type="button" class="filter-daerah" data-daerah="Kalimantan">Kalimantan</button>
+    <button type="button" class="filter-daerah" data-daerah="Sulawesi">Sulawesi</button>
+    <button type="button" class="filter-daerah" data-daerah="Maluku dan Papua">Maluku &amp; Papua</button>
+  </div>
+</div>
+
+    </section>
+
+    <section class="resep-section" id="resep">
+      <h2>Resep Pilihan</h2>
+      <p id="jumlahResep">Memuat resep...</p>
+      <div class="recipe-container" id="recipeContainer"></div>
+    </section>
+
+    <section id="detailResep" class="detail-section" hidden>
+      <button id="tutupDetail" type="button">← Kembali</button>
+      <div id="isiDetail"></div>
+    </section>
+
+    <section id="tentang" class="tentang">
+      <h2>Tentang Rasa Nusantara</h2>
+      <p>
+        Website ini mengenalkan 10 resep makanan tradisional
+        Indonesia beserta bahan dan cara pembuatannya.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Rasa Nusantara | Cinta Kuliner Indonesia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
